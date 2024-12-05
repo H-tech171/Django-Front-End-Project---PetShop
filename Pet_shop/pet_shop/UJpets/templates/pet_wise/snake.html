@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Pet Snakes{% endblock %}
+
+<body style="background-color: rgba(0, 0, 0, .9); place-items: center center;">
+    {% block content %} 
+
+    {% include "includes/navigation.html" %}
+    
+    <div class="card-container">
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Snakes/royal-pythons.jpg' %}" class="card-img-top" alt="Royal-pythons" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Royal Python</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Snakes/western-hognose-snake.jpg' %}" class="card-img-top" alt="Western-hognose-snake" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Western Hognose</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+        
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Snakes/california-kingsnakes.jpg' %}" class="card-img-top" alt="California-kingsnakes" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">California Kingsnakes</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Snakes/corn-snake.jpg' %}" class="card-img-top" alt="Corn-snake" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Corn Snake</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Snakes/green-tree-python.jpg' %}" class="card-img-top" alt="green-tree-python" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Green Tree Python </h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    {% include "includes/footer.html" %}
+
+    {% endblock %}
+    
+</body>
+

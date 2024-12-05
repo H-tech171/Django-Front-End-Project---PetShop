@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Pet Birds{% endblock %}
+
+<body>
+    {% block content %} 
+
+    {% include "includes/navigation.html" %}
+    
+    <div class="card-container">
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Birds/green-cheeked-conure.jpg' %}" class="card-img-top" alt="Green-cheeked-conure" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Green Cheeked Conure</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+        
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Birds/cockatoo.jpg' %}" class="card-img-top" alt="Cockatoo" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Cockatoo </h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Birds/budgerigar.jpg' %}" class="card-img-top" alt="Budgerigar" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Budgerigar</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Birds/blue-crowned-conure.jpg' %}" class="card-img-top" alt="Blue Crowned Conure" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Blue Crowned Conure</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Birds/parrotlet.jpg' %}" class="card-img-top" alt="parrotlet" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Parrotlet</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Birds/cockatiel.jpg' %}" class="card-img-top" alt="Cockatiel" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Cockatiel</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% endblock %}
+
+</body>
+

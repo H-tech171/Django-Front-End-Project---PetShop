@@ -1,0 +1,33 @@
+.swiper-container-fluid  {
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width:100%;
+    max-height:60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.swiper-container-fluid img{
+    
+    width:65%;
+    height:50%;
+    object-fit: contain;    
+}
+
+.swiper
+{
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper .swiper-pagination-bullet-active
+{
+    background:#fff;
+}

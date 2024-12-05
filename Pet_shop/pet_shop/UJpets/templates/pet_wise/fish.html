@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Pet Fishes{% endblock %}
+
+<body style="background-color: rgba(0, 0, 0, .9); place-items: center center;">
+    {% block content %} 
+
+    {% include "includes/navigation.html" %}
+    
+    <div class="card-container">
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Fishes/betta fish.jpg' %}" class="card-img-top" alt="Betta-fish" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Betta</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Fishes/tiger-barb.jpg' %}" class="card-img-top" alt="Tiger-barb" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Tiger Barb</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore! <p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Fishes/guppies.jpg' %}" class="card-img-top" alt="Guppies" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Guppies</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Fishes/german-blue-ram.jpg' %}" class="card-img-top" alt="German-blue-ram" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">German Blue Ram</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Fishes/dwarf-gourami.jpg' %}" class="maine-coon-cats" alt="Dwarf-gourami" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Dwarf Gourami</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Fishes/gold-fish.jpg' %}" class="card-img-top" alt="Gold-fish" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Gold Fish</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Fishes/buenos-aires-tetra.jpg' %}" class="card-img-top" alt="Buenos-aires-tetra" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Buenos Aires Tetra</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+        <div class="card" style="width: 16.5rem;">
+            <img src="{% static 'images/Fishes/clown-fish.jpg' %}" class="card-img-top" alt="Clown-fish" height = "180px">
+            <div class="card-body">
+            <h5 class="card-title">Clown Fish</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure inventore!</p>
+            <button class="card-btn"> Price</button>
+            </div>
+        
+        </div>
+
+    </div>
+
+    {% include "includes/footer.html" %}
+
+    {% endblock %}
+    
+</body>
+

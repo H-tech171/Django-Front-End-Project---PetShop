@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Urban Jungle Pets{% endblock %}
+
+{% block Links %}
+
+    <link 
+    rel = "stylesheet" 
+    href = "{% static 'styles/home_styles.css' %}?v=2.0"> 
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+{% endblock %}
+
+    {% block content %} 
+
+    {% include "includes/navigation.html" %}
+
+    <!-- Slider -->
+
+    <div class="swiper-container-fluid">
+
+        <!-- Slider main container -->
+        <div class="swiper">
+
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="{% static 'images/SliderImages/dog_slider.jpg' %}" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/SliderImages/cat_slider.jpg' %}" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/SliderImages/fish_slider.jpg' %}" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/SliderImages/lizzard_slider.jpg' %}" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/SliderImages/hamster_slider.jpg' %}" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/SliderImages/bird_slider.jpg' %}" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/SliderImages/tortoise_slider.jpg' %}" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/SliderImages/snake_slider.jpg' %}" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/SliderImages/hedgehog_slider.jpg' %}" alt=""></div>
+        </div>
+
+    <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+  
+  </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        autoplay:{delay: 3000, disableOnInteraction:false,},
+        speed: 2400,
+        loop: true,
+        
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+       });
+    </script>
+
+    {% include "includes/footer.html" %}
+
+    {% endblock %}

@@ -1,0 +1,48 @@
+{% load static %}
+
+<header>
+    <div class="header">
+        <div class = "navbar">
+        
+            <a href="{% url 'index' %}">
+                <button class = "button" id="home-btn" type = "button" style="width: 120px; font-weight:450;" >
+                    <img img src = "{% static 'images/Urban Jungle Pets-modified.png' %}" width = 55px>
+                    &NoBreak; 
+                    <br>
+                </button>
+            </a>
+            <div class = 'name' id="name">
+                
+                
+                Urban Jungle Pets
+                
+            </div>
+        
+            <div class="dropdown">
+                <button class="button" id="explore-btn" type="button" data-bs-toggle="dropdown" style="width: 120px;">
+                    Explore ! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+                
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'dogs' %}"><img src="{% static 'images/DropdownImages/dog-silhoutte.png' %}" alt="dog-silhoutte" height = "23px">   Dog</a></li>
+                <li><a class="dropdown-item" href="{% url 'cats' %}"><img src="{% static 'images/DropdownImages/cat.png' %}" alt="cat-silhoutte " height = "25px">   Cat</a></li>
+                <li><a class="dropdown-item" href="{% url 'fishes' %}"><img src="{% static 'images/DropdownImages/fish.png' %}" alt="fish-silhoutte" height = "18px">  Fish</a></li>
+                <li><a class="dropdown-item" href="{% url 'lizzards' %}"><img src="{% static 'images/DropdownImages/chameleon.png' %}" alt="chameleon-silhoutte" height = "25px">  Lizzard</a></li>
+                <li><a class="dropdown-item" href="{% url 'hamsters' %}"><img src="{% static 'images/DropdownImages/hamster.png' %}" alt="Hamster-silhoutte" height = "25px">  Hamster</a></li>
+                <li><a class="dropdown-item" href="{% url 'birds' %}"><img src="{% static 'images/DropdownImages/bird.png' %}" alt="bird-silhoutte" height = "25px">  Bird</a></li>
+                <li><a class="dropdown-item" href="{% url 'tortoises' %}"><img src="{% static 'images/DropdownImages/tortoise.png' %}" alt="tortoise-silhoutte" height = "25px">  Tortoise</a></li>
+                <li><a class="dropdown-item" href="{% url 'snakes' %}"><img src="{% static 'images/DropdownImages/snake.png' %}" alt="snake-silhoutte" height = "25px">  Snake</a></li>
+                <li><a class="dropdown-item" href="{% url 'hedgehogs' %}"><img src="{% static 'images/DropdownImages/hedgehog-silhoutte.png' %}" alt="hedgehog-silhoutte" height = "25px">  Hedgehog</a></li>
+
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#contact-us">Contact Us</a></li>
+
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</header>
